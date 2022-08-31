@@ -11,4 +11,9 @@ pipeline {
        echo "india"
       }
     }
+     post {
+       success {
+         archiveArtifacts artifacts: 'target/*.war'
+       }
+    }  
 }
