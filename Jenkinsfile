@@ -7,7 +7,7 @@ pipeline {
       }
     }
    }
-     stage("Deploy To tomcat"){
+     stage("Deploy To tomcat") {
       steps{
        echo "india"
       }
