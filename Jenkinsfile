@@ -7,14 +7,14 @@ pipeline {
       }
     }
    }
-     stage("Deploy To tomcat") {
+   stage("Deploy To tomcat") {
       steps{
        echo "india"
       }
-     }
-     post {
+   }
+   post {
        success {
          archiveArtifacts artifacts: 'target/*.war'
        }
-     }  
+   }  
 }
